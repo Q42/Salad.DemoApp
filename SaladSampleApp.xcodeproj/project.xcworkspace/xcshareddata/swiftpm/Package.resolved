@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Salad",
+        "repositoryURL": "https://github.com/Q42/Salad.git",
+        "state": {
+          "branch": "master",
+          "revision": "c30c6e09611112a148ca78072caf46a1e1885e7e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
