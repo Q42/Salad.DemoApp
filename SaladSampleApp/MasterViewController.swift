@@ -37,26 +37,30 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
   }
 
   @objc func showAddForm(_ sender: Any) {
-    let alert = UIAlertController(title: "Add todo item", message: nil, preferredStyle: .alert)
-    alert.addTextField(configurationHandler: { textField in
-      //
-    })
+    let alert = UIAlertController(title: "Add todo item", message: "What would you like to do today?", preferredStyle: .alert)
+    alert.addTextField(configurationHandler: nil)
     alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { action in
-      guard let title = alert.textFields?.first?.text else { return }
-      self.insertNewObject(title: title)
+      self.addTodo(title: alert.textFields?.first?.text)
     }))
     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
 
     present(alert, animated: true, completion: nil)
   }
 
-  func insertNewObject(title: String) {
+  func addTodo(title: String?) {
+    guard let title = title
+      else { return }
+
+    self.insertNewObject(title: title)
+  }
+
+  private func insertNewObject(title: String) {
     let context = self.fetchedResultsController.managedObjectContext
-    let newEvent = Event(context: context)
+    let todo = Todo(context: context)
          
     // If appropriate, configure the new managed object.
-    newEvent.timestamp = Date()
-    newEvent.title = title
+    todo.timestamp = Date()
+    todo.title = title
 
     // Save the context.
     do {
@@ -97,8 +101,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-    let event = fetchedResultsController.object(at: indexPath)
-    configureCell(cell, withEvent: event)
+    let todo = fetchedResultsController.object(at: indexPath)
+    configureCell(cell, withTodo: todo)
     return cell
   }
 
@@ -123,20 +127,20 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
   }
 
-  func configureCell(_ cell: UITableViewCell, withEvent event: Event) {
-    cell.textLabel?.text = event.title
-    cell.detailTextLabel?.text = event.timestamp?.description
-    cell.accessibilityIdentifier = "itemCell"
+  func configureCell(_ cell: UITableViewCell, withTodo todo: Todo) {
+    cell.textLabel?.text = todo.title
+    cell.detailTextLabel?.text = todo.timestamp?.description
+    cell.accessibilityIdentifier = "todoItemCell"
   }
 
   // MARK: - Fetched results controller
 
-  var fetchedResultsController: NSFetchedResultsController<Event> {
+  var fetchedResultsController: NSFetchedResultsController<Todo> {
       if _fetchedResultsController != nil {
           return _fetchedResultsController!
       }
       
-      let fetchRequest: NSFetchRequest<Event> = Event.fetchRequest()
+      let fetchRequest: NSFetchRequest<Todo> = Todo.fetchRequest()
       
       // Set the batch size to a suitable number.
       fetchRequest.fetchBatchSize = 20
@@ -163,7 +167,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
       
       return _fetchedResultsController!
   }    
-  var _fetchedResultsController: NSFetchedResultsController<Event>? = nil
+  var _fetchedResultsController: NSFetchedResultsController<Todo>? = nil
 
   func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
       tableView.beginUpdates()
@@ -187,9 +191,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
           case .delete:
               tableView.deleteRows(at: [indexPath!], with: .fade)
           case .update:
-              configureCell(tableView.cellForRow(at: indexPath!)!, withEvent: anObject as! Event)
+              configureCell(tableView.cellForRow(at: indexPath!)!, withTodo: anObject as! Todo)
           case .move:
-              configureCell(tableView.cellForRow(at: indexPath!)!, withEvent: anObject as! Event)
+              configureCell(tableView.cellForRow(at: indexPath!)!, withTodo: anObject as! Todo)
               tableView.moveRow(at: indexPath!, to: newIndexPath!)
           default:
               return

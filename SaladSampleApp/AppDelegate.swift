@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   private func handleLaunchArguments() {
+    // Resets the database for testing purposes
     if ProcessInfo().arguments.contains("--Reset") {
       deletePersistentStores()
       loadPersistentStores()

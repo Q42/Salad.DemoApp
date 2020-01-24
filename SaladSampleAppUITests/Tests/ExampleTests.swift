@@ -29,33 +29,33 @@ class ExampleTests: XCTestCase {
     scenario = Scenario(given: app)
   }
 
-  func testCreateItem() {
+  func testCreateTodoItem() {
     let todoItem = valuePicker.pickValue(from: TodoItem.validItems)
 
     scenario
-      .when(CreateItem(title: todoItem.title))
+      .when(CreateTodoItem(title: todoItem.title))
       .then { view in
         XCTAssertEqual(view.cells.count, 1)
         XCTAssertEqual(view.cells.first?.titleLabel.label, todoItem.title)
       }
   }
 
-  func testCreateEmptyItem() {
+  func testCreateEmptyTodoItem() {
     scenario
-      .when(CreateItem(title: TodoItem.emptyItem.title))
+      .when(CreateTodoItem(title: TodoItem.emptyItem.title))
       .then { view in
         // Oh no, this test is failing!
-        // See if you can fix it.
+        // See if you can fix it by adding some input validation in the app.
         XCTAssertEqual(view.cells.count, 0)
       }
   }
 
-  func testDeleteItem() {
+  func testDeleteTodoItem() {
     let todoItem = valuePicker.pickValue(from: TodoItem.validItems)
 
     scenario
-      .when(CreateItem(title: todoItem.title))
-      .when(DeleteItem(atIndex: 0))
+      .when(CreateTodoItem(title: todoItem.title))
+      .when(DeleteTodoItem(atIndex: 0))
       .then { view in
         XCTAssertEqual(view.cells.count, 0)
       }
@@ -65,8 +65,8 @@ class ExampleTests: XCTestCase {
     let todoItem = valuePicker.pickValue(from: TodoItem.validItems)
 
     scenario
-      .when(CreateItem(title: todoItem.title))
-      .when(OpenItem(atIndex: 0))
+      .when(CreateTodoItem(title: todoItem.title))
+      .when(OpenTodoItem(atIndex: 0))
       .then { view in
         XCTAssertEqual(view.titleLabel.label, todoItem.title)
       }

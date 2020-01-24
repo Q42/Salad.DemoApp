@@ -1,5 +1,5 @@
 //
-//  DeleteItem.swift
+//  CreateTodoItem.swift
 //  SaladSampleAppUITests
 //
 //  Created by Mathijs Bernson on 24/01/2020.
@@ -9,15 +9,14 @@
 import XCTest
 import Salad
 
-struct DeleteItem: Behaviour {
-  private let index: Int
-
-  init(atIndex index: Int) {
-    self.index = index
-  }
+struct CreateTodoItem: Behaviour {
+  let title: String
 
   func perform(from view: MasterView) -> MasterView {
-    view.cells[index].swipeToDelete()
+    let addItemView = view.tapAddButton()
+    addItemView.enterTitle(title: title)
+    addItemView.tapSaveButton()
+
     return view
   }
 }

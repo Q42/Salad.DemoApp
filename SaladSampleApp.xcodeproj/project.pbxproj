@@ -18,12 +18,12 @@
 		DD4A282F23DB41E500A2BF9F /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A282E23DB41E500A2BF9F /* MasterView.swift */; };
 		DD4A283123DB41EA00A2BF9F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283023DB41EA00A2BF9F /* DetailView.swift */; };
 		DD4A283523DB429E00A2BF9F /* Salad in Frameworks */ = {isa = PBXBuildFile; productRef = DD4A283423DB429E00A2BF9F /* Salad */; };
-		DD4A283723DB42D900A2BF9F /* CreateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283623DB42D900A2BF9F /* CreateItem.swift */; };
-		DD4A283923DB439800A2BF9F /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283823DB439800A2BF9F /* ItemCell.swift */; };
-		DD4A283B23DB465B00A2BF9F /* DeleteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283A23DB465B00A2BF9F /* DeleteItem.swift */; };
+		DD4A283723DB42D900A2BF9F /* CreateTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283623DB42D900A2BF9F /* CreateTodoItem.swift */; };
+		DD4A283923DB439800A2BF9F /* TodoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283823DB439800A2BF9F /* TodoItemCell.swift */; };
+		DD4A283B23DB465B00A2BF9F /* DeleteTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283A23DB465B00A2BF9F /* DeleteTodoItem.swift */; };
 		DD4A283D23DB4D2700A2BF9F /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283C23DB4D2700A2BF9F /* AddItemView.swift */; };
 		DD4A284023DB4F9A00A2BF9F /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283F23DB4F9A00A2BF9F /* TodoItem.swift */; };
-		DD4A284223DB513400A2BF9F /* OpenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A284123DB513400A2BF9F /* OpenItem.swift */; };
+		DD4A284223DB513400A2BF9F /* OpenTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A284123DB513400A2BF9F /* OpenTodoItem.swift */; };
 		DD5C353823DB56B8003B7B81 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C353723DB56B8003B7B81 /* ExampleTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +52,12 @@
 		DD4A282323DB404B00A2BF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD4A282E23DB41E500A2BF9F /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		DD4A283023DB41EA00A2BF9F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		DD4A283623DB42D900A2BF9F /* CreateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItem.swift; sourceTree = "<group>"; };
-		DD4A283823DB439800A2BF9F /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		DD4A283A23DB465B00A2BF9F /* DeleteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteItem.swift; sourceTree = "<group>"; };
+		DD4A283623DB42D900A2BF9F /* CreateTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoItem.swift; sourceTree = "<group>"; };
+		DD4A283823DB439800A2BF9F /* TodoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemCell.swift; sourceTree = "<group>"; };
+		DD4A283A23DB465B00A2BF9F /* DeleteTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTodoItem.swift; sourceTree = "<group>"; };
 		DD4A283C23DB4D2700A2BF9F /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		DD4A283F23DB4F9A00A2BF9F /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
-		DD4A284123DB513400A2BF9F /* OpenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenItem.swift; sourceTree = "<group>"; };
+		DD4A284123DB513400A2BF9F /* OpenTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTodoItem.swift; sourceTree = "<group>"; };
 		DD5C353723DB56B8003B7B81 /* ExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,7 +131,7 @@
 			children = (
 				DD4A282E23DB41E500A2BF9F /* MasterView.swift */,
 				DD4A283023DB41EA00A2BF9F /* DetailView.swift */,
-				DD4A283823DB439800A2BF9F /* ItemCell.swift */,
+				DD4A283823DB439800A2BF9F /* TodoItemCell.swift */,
 				DD4A283C23DB4D2700A2BF9F /* AddItemView.swift */,
 			);
 			path = ViewObjects;
@@ -140,9 +140,9 @@
 		DD4A282D23DB40DD00A2BF9F /* Behaviours */ = {
 			isa = PBXGroup;
 			children = (
-				DD4A283623DB42D900A2BF9F /* CreateItem.swift */,
-				DD4A283A23DB465B00A2BF9F /* DeleteItem.swift */,
-				DD4A284123DB513400A2BF9F /* OpenItem.swift */,
+				DD4A283623DB42D900A2BF9F /* CreateTodoItem.swift */,
+				DD4A283A23DB465B00A2BF9F /* DeleteTodoItem.swift */,
+				DD4A284123DB513400A2BF9F /* OpenTodoItem.swift */,
 			);
 			path = Behaviours;
 			sourceTree = "<group>";
@@ -285,11 +285,11 @@
 				DD4A282F23DB41E500A2BF9F /* MasterView.swift in Sources */,
 				DD4A283123DB41EA00A2BF9F /* DetailView.swift in Sources */,
 				DD4A283D23DB4D2700A2BF9F /* AddItemView.swift in Sources */,
-				DD4A283723DB42D900A2BF9F /* CreateItem.swift in Sources */,
-				DD4A284223DB513400A2BF9F /* OpenItem.swift in Sources */,
-				DD4A283923DB439800A2BF9F /* ItemCell.swift in Sources */,
+				DD4A283723DB42D900A2BF9F /* CreateTodoItem.swift in Sources */,
+				DD4A284223DB513400A2BF9F /* OpenTodoItem.swift in Sources */,
+				DD4A283923DB439800A2BF9F /* TodoItemCell.swift in Sources */,
 				DD4A284023DB4F9A00A2BF9F /* TodoItem.swift in Sources */,
-				DD4A283B23DB465B00A2BF9F /* DeleteItem.swift in Sources */,
+				DD4A283B23DB465B00A2BF9F /* DeleteTodoItem.swift in Sources */,
 				DD5C353823DB56B8003B7B81 /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

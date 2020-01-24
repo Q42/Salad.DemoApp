@@ -15,8 +15,8 @@ struct MasterView: ViewObject {
 
   private var addButton: XCUIElement { element("addButton") }
 
-  var cells: [ItemCell] {
-    return root.cells.allElementsBoundByIndex.map(ItemCell.init)
+  var cells: [TodoItemCell] {
+    return root.cells.allElementsBoundByIndex.map(TodoItemCell.init)
   }
 
   func tapAddButton() -> AddItemView {

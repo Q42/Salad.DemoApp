@@ -17,6 +17,7 @@ class DetailViewController: UIViewController {
     // Update the user interface for the detail item.
     if let detail = detailItem {
         if let label = detailDescriptionLabel {
+            self.title = detail.title
             label.text = detail.title
         }
     }
@@ -30,7 +31,7 @@ class DetailViewController: UIViewController {
     detailDescriptionLabel.accessibilityIdentifier = "titleLabel"
   }
 
-  var detailItem: Event? {
+  var detailItem: Todo? {
     didSet {
         // Update the view.
         configureView()

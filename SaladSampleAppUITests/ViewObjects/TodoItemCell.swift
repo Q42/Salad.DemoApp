@@ -9,9 +9,9 @@
 import XCTest
 import Salad
 
-struct ItemCell: ViewObject {
+struct TodoItemCell: ViewObject {
   let root: XCUIElement
-  let identifyingElementId = "itemCell"
+  let identifyingElementId = "todoItemCell"
 
   var titleLabel: XCUIElement {
     root.staticTexts.firstMatch

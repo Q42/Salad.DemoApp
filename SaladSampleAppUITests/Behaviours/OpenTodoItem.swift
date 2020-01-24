@@ -1,5 +1,5 @@
 //
-//  OpenItem.swift
+//  OpenTodoItem.swift
 //  SaladSampleAppUITests
 //
 //  Created by Mathijs Bernson on 24/01/2020.
@@ -9,7 +9,7 @@
 import XCTest
 import Salad
 
-struct OpenItem: Behaviour {
+struct OpenTodoItem: Behaviour {
   private let index: Int
 
   init(atIndex index: Int) {
