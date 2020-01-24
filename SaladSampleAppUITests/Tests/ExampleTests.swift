@@ -22,7 +22,7 @@ class ExampleTests: XCTestCase {
     let app = XCUIApplication()
     app.launchArguments = [
       // This flag is built into the application in order to reset its database for testing.
-      "--Reset",
+      "--Reset"
     ]
     app.launch()
 

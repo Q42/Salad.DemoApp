@@ -14,7 +14,7 @@ struct TodoItem {
   static let validItems: [TodoItem] = [
     TodoItem(title: "Get milk 🥛"),
     TodoItem(title: "Wash clothes 👕"),
-    TodoItem(title: "Take shower"),
+    TodoItem(title: "Take shower")
   ]
 
   static let emptyItem = TodoItem(title: "")

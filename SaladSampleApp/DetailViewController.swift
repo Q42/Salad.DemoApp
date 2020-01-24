@@ -12,14 +12,13 @@ class DetailViewController: UIViewController {
 
   @IBOutlet weak var detailDescriptionLabel: UILabel!
 
-
   func configureView() {
     // Update the user interface for the detail item.
     if let detail = detailItem {
-        if let label = detailDescriptionLabel {
-            self.title = detail.title
-            label.text = detail.title
-        }
+      if let label = detailDescriptionLabel {
+        self.title = detail.title
+        label.text = detail.title
+      }
     }
   }
 
@@ -33,11 +32,9 @@ class DetailViewController: UIViewController {
 
   var detailItem: Todo? {
     didSet {
-        // Update the view.
-        configureView()
+      // Update the view.
+      configureView()
     }
   }
 
-
 }
-
