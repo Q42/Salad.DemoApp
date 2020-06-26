@@ -33,6 +33,7 @@ class ExampleTests: XCTestCase {
     let todoItem = valuePicker.pickValue(from: TodoItem.validItems)
 
     scenario
+      .then { view in XCTAssertEqual(view.cells.count, 0) }
       .when(CreateTodoItem(title: todoItem.title))
       .then { view in
         XCTAssertEqual(view.cells.count, 1)
@@ -43,22 +44,18 @@ class ExampleTests: XCTestCase {
   func testCreateEmptyTodoItem() {
     scenario
       .when(CreateTodoItem(title: TodoItem.emptyItem.title))
-      .then { view in
-        // Oh no, this test is failing!
-        // See if you can fix it by adding some input validation in the app.
-        XCTAssertEqual(view.cells.count, 0)
-      }
+      .then { view in XCTAssertEqual(view.cells.count, 0) }
   }
 
   func testDeleteTodoItem() {
     let todoItem = valuePicker.pickValue(from: TodoItem.validItems)
 
     scenario
+      .then { view in XCTAssertEqual(view.cells.count, 0) }
       .when(CreateTodoItem(title: todoItem.title))
+      .then { view in XCTAssertEqual(view.cells.count, 1) }
       .when(DeleteTodoItem(atIndex: 0))
-      .then { view in
-        XCTAssertEqual(view.cells.count, 0)
-      }
+      .then { view in XCTAssertEqual(view.cells.count, 0) }
   }
 
   func testDetailView() {
@@ -67,8 +64,6 @@ class ExampleTests: XCTestCase {
     scenario
       .when(CreateTodoItem(title: todoItem.title))
       .when(OpenTodoItem(atIndex: 0))
-      .then { view in
-        XCTAssertEqual(view.titleLabel.label, todoItem.title)
-      }
+      .then { view in XCTAssertEqual(view.titleLabel.label, todoItem.title) }
   }
 }

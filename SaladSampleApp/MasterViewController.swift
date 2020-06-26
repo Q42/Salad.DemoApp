@@ -47,7 +47,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
   }
 
   func addTodo(title: String?) {
-    guard let title = title
+    guard let title = title,
+      !title.isEmpty // Todo's may not be empty
       else { return }
 
     self.insertNewObject(title: title)
