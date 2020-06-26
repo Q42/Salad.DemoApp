@@ -16,7 +16,7 @@ struct DeleteTodoItem: Behaviour {
     self.index = index
   }
 
-  func perform(from view: MasterView) -> MasterView {
+  func perform(from view: TodoListView) -> TodoListView {
     view.cells[index].swipeToDelete()
     return view
   }

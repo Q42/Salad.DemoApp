@@ -1,5 +1,5 @@
 //
-//  MasterView.swift
+//  TodoListView.swift
 //  SaladSampleAppUITests
 //
 //  Created by Mathijs Bernson on 24/01/2020.
@@ -9,7 +9,7 @@
 import XCTest
 import Salad
 
-struct MasterView: ViewObject {
+struct TodoListView: ViewObject {
   let root: XCUIElement
   let identifyingElementId = "masterView"
 

@@ -1,5 +1,5 @@
 //
-//  DetailView.swift
+//  TodoItemView.swift
 //  SaladSampleAppUITests
 //
 //  Created by Mathijs Bernson on 24/01/2020.
@@ -9,7 +9,7 @@
 import XCTest
 import Salad
 
-struct DetailView: ViewObject {
+struct TodoItemView: ViewObject {
   let root: XCUIElement
   let identifyingElementId = "detailView"
 

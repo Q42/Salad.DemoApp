@@ -16,7 +16,7 @@ struct OpenTodoItem: Behaviour {
     self.index = index
   }
 
-  func perform(from view: MasterView) -> DetailView {
+  func perform(from view: TodoListView) -> TodoItemView {
     return view.cells[index].open()
   }
 }

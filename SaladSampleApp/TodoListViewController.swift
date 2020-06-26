@@ -1,5 +1,5 @@
 //
-//  MasterViewController.swift
+//  TodoListViewController.swift
 //  SaladSampleApp
 //
 //  Created by Mathijs Bernson on 24/01/2020.
@@ -9,9 +9,9 @@
 import UIKit
 import CoreData
 
-class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class TodoListViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
-  var detailViewController: DetailViewController?
+  var detailViewController: TodoItemViewController?
   var managedObjectContext: NSManagedObjectContext?
 
   override func viewDidLoad() {
@@ -24,7 +24,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     navigationItem.rightBarButtonItem = addButton
     if let split = splitViewController {
       let controllers = split.viewControllers
-      detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+      detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? TodoItemViewController
     }
 
     view.accessibilityIdentifier = "masterView"
@@ -47,7 +47,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
   }
 
   func addTodo(title: String?) {
-    guard let title = title
+    guard let title = title,
+      !title.isEmpty // The title of a todo item may not be empty
       else { return }
 
     self.insertNewObject(title: title)
@@ -78,7 +79,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     if segue.identifier == "showDetail" {
       if let indexPath = tableView.indexPathForSelectedRow {
         let object = fetchedResultsController.object(at: indexPath)
-        let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+        let controller = (segue.destination as! UINavigationController).topViewController as! TodoItemViewController
         controller.detailItem = object
         controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
         controller.navigationItem.leftItemsSupplementBackButton = true

@@ -13,20 +13,16 @@ struct TodoItemCell: ViewObject {
   let root: XCUIElement
   let identifyingElementId = "todoItemCell"
 
-  var titleLabel: XCUIElement {
-    root.staticTexts.firstMatch
-  }
+  var titleLabel: XCUIElement { root.staticTexts.firstMatch }
 
-  var dateLabel: XCUIElement {
-    root.staticTexts.allElementsBoundByIndex[1]
-  }
+  var dateLabel: XCUIElement { root.staticTexts.allElementsBoundByIndex[1] }
 
   func swipeToDelete() {
     root.swipeLeft()
     root.buttons["Delete"].tap()
   }
 
-  func open() -> DetailView {
+  func open() -> TodoItemView {
     root.tap()
     // Our `root` is scoped to the TableViewCell of this item.
     // Hence we need to take a DetailView from the application root.

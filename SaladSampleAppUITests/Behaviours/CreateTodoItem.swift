@@ -12,7 +12,7 @@ import Salad
 struct CreateTodoItem: Behaviour {
   let title: String
 
-  func perform(from view: MasterView) -> MasterView {
+  func perform(from view: TodoListView) -> TodoListView {
     let addItemView = view.tapAddButton()
     addItemView.enterTitle(title: title)
     addItemView.tapSaveButton()

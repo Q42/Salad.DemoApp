@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  TodoItemViewController.swift
 //  SaladSampleApp
 //
 //  Created by Mathijs Bernson on 24/01/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class TodoItemViewController: UIViewController {
 
   @IBOutlet weak var detailDescriptionLabel: UILabel!
 
