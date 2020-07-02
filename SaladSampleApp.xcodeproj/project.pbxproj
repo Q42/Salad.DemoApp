@@ -204,7 +204,6 @@
 				DD4A27FE23DB404800A2BF9F /* Sources */,
 				DD4A27FF23DB404800A2BF9F /* Frameworks */,
 				DD4A280023DB404800A2BF9F /* Resources */,
-				572A986D1A821BFCD0B2E69E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,23 +308,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp-SaladSampleAppUITests/Pods-SaladSampleApp-SaladSampleAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		572A986D1A821BFCD0B2E69E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp/Pods-SaladSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp/Pods-SaladSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp/Pods-SaladSampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AA81816F90C3EC8EC4A541A6 /* [CP] Check Pods Manifest.lock */ = {

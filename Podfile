@@ -6,10 +6,10 @@ target 'SaladSampleApp' do
   use_frameworks!
 
   # Pods for SaladSampleApp
-  pod 'Salad', path: '../Salad'
 
   target 'SaladSampleAppUITests' do
     # Pods for testing
+    pod 'Salad', path: '../Salad'
   end
 
 end
