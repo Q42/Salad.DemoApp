@@ -33,28 +33,30 @@ class TodoAppTests: XCTestCase {
     let todoItem = valuePicker.pickValue(from: TodoItem.validItems)
 
     scenario
-      .then { view in XCTAssertEqual(view.cells.count, 0) }
+      .then { view in XCTAssertEqual(view.todoItems.count, 0) }
       .when(CreateTodoItem(title: todoItem.title))
       .then { view in
-        XCTAssertEqual(view.cells.count, 1)
-        XCTAssertEqual(view.cells.first?.titleLabel.label, todoItem.title)
+        XCTAssertEqual(view.todoItems.count, 1)
+        XCTAssertEqual(view.todoItems.first?.titleLabel.label, todoItem.title)
       }
   }
 
   func testCreateEmptyTodoItem() {
     scenario
-      .then { view in XCTAssertEqual(view.cells.count, 0) }
+      .then { view in XCTAssertEqual(view.todoItems.count, 0) }
       .when(CreateTodoItem(title: TodoItem.emptyItem.title))
-      .then { view in XCTAssertEqual(view.cells.count, 0) }
+      .then { view in XCTAssertEqual(view.todoItems.count, 0) }
   }
 
   func testDeleteTodoItem() {
     let todoItem = valuePicker.pickValue(from: TodoItem.validItems)
 
     scenario
+      .then { view in XCTAssertEqual(view.todoItems.count, 0) }
       .when(CreateTodoItem(title: todoItem.title))
+      .then { view in XCTAssertEqual(view.todoItems.count, 1) }
       .when(DeleteTodoItem(atIndex: 0))
-      .then { view in XCTAssertEqual(view.cells.count, 0) }
+      .then { view in XCTAssertEqual(view.todoItems.count, 0) }
   }
 
   func testDetailView() {
