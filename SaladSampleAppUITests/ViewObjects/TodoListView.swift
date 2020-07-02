@@ -15,7 +15,7 @@ struct TodoListView: ViewObject {
 
   private var addButton: XCUIElement { element("addButton") }
 
-  var cells: [TodoItemCell] {
+  var todoItems: [TodoItemCell] {
     return root.cells.allElementsBoundByIndex.map(TodoItemCell.init)
   }
 

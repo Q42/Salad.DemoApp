@@ -17,6 +17,6 @@ struct OpenTodoItem: Behaviour {
   }
 
   func perform(from view: TodoListView) -> TodoItemView {
-    return view.cells[index].open()
+    return view.todoItems[index].open()
   }
 }
