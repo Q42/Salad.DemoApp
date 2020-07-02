@@ -1,0 +1,16 @@
+PODS:
+  - Salad (0.0.2)
+
+DEPENDENCIES:
+  - Salad (from `../Salad`)
+
+EXTERNAL SOURCES:
+  Salad:
+    :path: "../Salad"
+
+SPEC CHECKSUMS:
+  Salad: 8a7d53e4343c81d7d6f34a9df7856e9bb6cc8186
+
+PODFILE CHECKSUM: 360c738deb2a60d37f047bd1aa7c707f2da18269
+
+COCOAPODS: 1.9.3

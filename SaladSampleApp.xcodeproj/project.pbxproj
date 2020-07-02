@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014C2A1527B2029E72A9D849 /* Pods_SaladSampleApp_SaladSampleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51A89C0F09D880B38255840 /* Pods_SaladSampleApp_SaladSampleAppUITests.framework */; };
+		7F5C9EA53F8AAC0B21D5E393 /* Pods_SaladSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFB0BE24293AF07DCB18CE1 /* Pods_SaladSampleApp.framework */; };
 		DD4A280623DB404800A2BF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A280523DB404800A2BF9F /* AppDelegate.swift */; };
 		DD4A280923DB404800A2BF9F /* SaladSampleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD4A280723DB404800A2BF9F /* SaladSampleApp.xcdatamodeld */; };
 		DD4A280B23DB404800A2BF9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A280A23DB404800A2BF9F /* SceneDelegate.swift */; };
@@ -17,7 +19,6 @@
 		DD4A281723DB404B00A2BF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4A281523DB404B00A2BF9F /* LaunchScreen.storyboard */; };
 		DD4A282F23DB41E500A2BF9F /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A282E23DB41E500A2BF9F /* TodoListView.swift */; };
 		DD4A283123DB41EA00A2BF9F /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283023DB41EA00A2BF9F /* TodoItemView.swift */; };
-		DD4A283523DB429E00A2BF9F /* Salad in Frameworks */ = {isa = PBXBuildFile; productRef = DD4A283423DB429E00A2BF9F /* Salad */; };
 		DD4A283723DB42D900A2BF9F /* CreateTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283623DB42D900A2BF9F /* CreateTodoItem.swift */; };
 		DD4A283923DB439800A2BF9F /* TodoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283823DB439800A2BF9F /* TodoItemCell.swift */; };
 		DD4A283B23DB465B00A2BF9F /* DeleteTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283A23DB465B00A2BF9F /* DeleteTodoItem.swift */; };
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AAA77DE83AF0280AB84E7DF /* Pods-SaladSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaladSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SaladSampleApp/Pods-SaladSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4FD964849A76E07D1E8E09B2 /* Pods-SaladSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaladSampleApp.release.xcconfig"; path = "Target Support Files/Pods-SaladSampleApp/Pods-SaladSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		693375AED91D8FF6183B1830 /* Pods-SaladSampleApp-SaladSampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaladSampleApp-SaladSampleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SaladSampleApp-SaladSampleAppUITests/Pods-SaladSampleApp-SaladSampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD4A280223DB404800A2BF9F /* SaladSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaladSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4A280523DB404800A2BF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4A280823DB404800A2BF9F /* SaladSampleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaladSampleApp.xcdatamodel; sourceTree = "<group>"; };
@@ -59,6 +63,9 @@
 		DD4A283F23DB4F9A00A2BF9F /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		DD4A284123DB513400A2BF9F /* OpenTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTodoItem.swift; sourceTree = "<group>"; };
 		DD5C353723DB56B8003B7B81 /* TodoAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoAppTests.swift; sourceTree = "<group>"; };
+		E4608ABCE7F21B63FD1A7B9E /* Pods-SaladSampleApp-SaladSampleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaladSampleApp-SaladSampleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SaladSampleApp-SaladSampleAppUITests/Pods-SaladSampleApp-SaladSampleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E51A89C0F09D880B38255840 /* Pods_SaladSampleApp_SaladSampleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaladSampleApp_SaladSampleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFB0BE24293AF07DCB18CE1 /* Pods_SaladSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaladSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5C9EA53F8AAC0B21D5E393 /* Pods_SaladSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,19 +81,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4A283523DB429E00A2BF9F /* Salad in Frameworks */,
+				014C2A1527B2029E72A9D849 /* Pods_SaladSampleApp_SaladSampleAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A677B19725135A8A2883842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA77DE83AF0280AB84E7DF /* Pods-SaladSampleApp.debug.xcconfig */,
+				4FD964849A76E07D1E8E09B2 /* Pods-SaladSampleApp.release.xcconfig */,
+				693375AED91D8FF6183B1830 /* Pods-SaladSampleApp-SaladSampleAppUITests.debug.xcconfig */,
+				E4608ABCE7F21B63FD1A7B9E /* Pods-SaladSampleApp-SaladSampleAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69A4BD51CB7EC856527A1F71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBFB0BE24293AF07DCB18CE1 /* Pods_SaladSampleApp.framework */,
+				E51A89C0F09D880B38255840 /* Pods_SaladSampleApp_SaladSampleAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD4A27F923DB404800A2BF9F = {
 			isa = PBXGroup;
 			children = (
 				DD4A280423DB404800A2BF9F /* SaladSampleApp */,
 				DD4A282023DB404B00A2BF9F /* SaladSampleAppUITests */,
 				DD4A280323DB404800A2BF9F /* Products */,
+				3A677B19725135A8A2883842 /* Pods */,
+				69A4BD51CB7EC856527A1F71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD4A282623DB404B00A2BF9F /* Build configuration list for PBXNativeTarget "SaladSampleApp" */;
 			buildPhases = (
+				B30C9211EEEEDF0782FAD8D3 /* [CP] Check Pods Manifest.lock */,
 				DD4A27FE23DB404800A2BF9F /* Sources */,
 				DD4A27FF23DB404800A2BF9F /* Frameworks */,
 				DD4A280023DB404800A2BF9F /* Resources */,
+				572A986D1A821BFCD0B2E69E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD4A282923DB404B00A2BF9F /* Build configuration list for PBXNativeTarget "SaladSampleAppUITests" */;
 			buildPhases = (
+				AA81816F90C3EC8EC4A541A6 /* [CP] Check Pods Manifest.lock */,
 				DD4A281923DB404B00A2BF9F /* Sources */,
 				DD4A281A23DB404B00A2BF9F /* Frameworks */,
 				DD4A281B23DB404B00A2BF9F /* Resources */,
+				06A9C6766A4E169D413B1273 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,9 +231,6 @@
 				DD4A281F23DB404B00A2BF9F /* PBXTargetDependency */,
 			);
 			name = SaladSampleAppUITests;
-			packageProductDependencies = (
-				DD4A283423DB429E00A2BF9F /* Salad */,
-			);
 			productName = SaladSampleAppUITests;
 			productReference = DD4A281D23DB404B00A2BF9F /* SaladSampleAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -232,9 +263,6 @@
 				Base,
 			);
 			mainGroup = DD4A27F923DB404800A2BF9F;
-			packageReferences = (
-				DD4A283323DB429E00A2BF9F /* XCRemoteSwiftPackageReference "Salad" */,
-			);
 			productRefGroup = DD4A280323DB404800A2BF9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,6 +292,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06A9C6766A4E169D413B1273 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp-SaladSampleAppUITests/Pods-SaladSampleApp-SaladSampleAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp-SaladSampleAppUITests/Pods-SaladSampleApp-SaladSampleAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp-SaladSampleAppUITests/Pods-SaladSampleApp-SaladSampleAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		572A986D1A821BFCD0B2E69E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp/Pods-SaladSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp/Pods-SaladSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaladSampleApp/Pods-SaladSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA81816F90C3EC8EC4A541A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaladSampleApp-SaladSampleAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B30C9211EEEEDF0782FAD8D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaladSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD4A27FE23DB404800A2BF9F /* Sources */ = {
@@ -440,6 +549,7 @@
 		};
 		DD4A282723DB404B00A2BF9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAA77DE83AF0280AB84E7DF /* Pods-SaladSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +568,7 @@
 		};
 		DD4A282823DB404B00A2BF9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD964849A76E07D1E8E09B2 /* Pods-SaladSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,8 +587,8 @@
 		};
 		DD4A282A23DB404B00A2BF9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 693375AED91D8FF6183B1830 /* Pods-SaladSampleApp-SaladSampleAppUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LC3Y92HQQ3;
 				INFOPLIST_FILE = SaladSampleAppUITests/Info.plist;
@@ -496,8 +607,8 @@
 		};
 		DD4A282B23DB404B00A2BF9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4608ABCE7F21B63FD1A7B9E /* Pods-SaladSampleApp-SaladSampleAppUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LC3Y92HQQ3;
 				INFOPLIST_FILE = SaladSampleAppUITests/Info.plist;
@@ -545,25 +656,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DD4A283323DB429E00A2BF9F /* XCRemoteSwiftPackageReference "Salad" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Q42/Salad.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DD4A283423DB429E00A2BF9F /* Salad */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DD4A283323DB429E00A2BF9F /* XCRemoteSwiftPackageReference "Salad" */;
-			productName = Salad;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DD4A280723DB404800A2BF9F /* SaladSampleApp.xcdatamodeld */ = {
