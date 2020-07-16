@@ -13,5 +13,5 @@ struct TodoItemView: ViewObject {
   let root: XCUIElement
   let identifyingElementId = "detailView"
 
-  var titleLabel: XCUIElement { element("titleLabel") }
+  var titleLabel: XCUIElement { root.staticTexts["titleLabel"] }
 }

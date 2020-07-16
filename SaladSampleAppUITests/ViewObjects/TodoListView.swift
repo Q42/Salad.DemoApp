@@ -13,7 +13,7 @@ struct TodoListView: ViewObject {
   let root: XCUIElement
   let identifyingElementId = "masterView"
 
-  private var addButton: XCUIElement { element("addButton") }
+  private var addButton: XCUIElement { root.buttons["addButton"] }
 
   var todoItems: [TodoItemCell] {
     return root.cells.allElementsBoundByIndex.map(TodoItemCell.init)
