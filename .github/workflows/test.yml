@@ -15,5 +15,5 @@ jobs:
       run: xcodebuild test -project SaladSampleApp.xcodeproj -scheme SaladSampleApp -destination "platform=iOS Simulator,name=iPhone 11" -resultBundlePath "./ResultBundle.xcresult" | xcpretty
     - uses: actions/upload-artifact@v2
       with:
-        name: ResultBundle
+        name: ResultBundle.xcresult
         path: ./ResultBundle.xcresult
