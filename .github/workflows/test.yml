@@ -11,8 +11,8 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Test
-      run: xcodebuild test -project SaladSampleApp.xcodeproj -scheme SaladSampleApp -destination "platform=iOS Simulator,name=iPhone 11" -resultBundlePath "./ResultBundle.xcresult" | xcpretty
+    - name: UI Tests
+      run: set -o pipefail && xcodebuild test -project SaladSampleApp.xcodeproj -scheme SaladSampleApp -destination "platform=iOS Simulator,name=iPhone 11" -resultBundlePath "./ResultBundle.xcresult" | xcpretty
     - uses: actions/upload-artifact@v2
       with:
         name: ResultBundle.xcresult
