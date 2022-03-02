@@ -1,0 +1,43 @@
+{
+  "configurations" : [
+    {
+      "id" : "EC9CD74C-C91F-41B2-903B-AA8CA22E6A8D",
+      "name" : "English",
+      "options" : {
+
+      }
+    },
+    {
+      "enabled" : false,
+      "id" : "EA1A3C4A-3822-4D22-908F-C3BFA104A84E",
+      "name" : "Dutch",
+      "options" : {
+        "language" : "nl",
+        "region" : "NL"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "commandLineArgumentEntries" : [
+
+    ],
+    "language" : "en",
+    "region" : "US",
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SaladSampleApp.xcodeproj",
+      "identifier" : "DD4A280123DB404800A2BF9F",
+      "name" : "SaladSampleApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SaladSampleApp.xcodeproj",
+        "identifier" : "DD4A281C23DB404B00A2BF9F",
+        "name" : "SaladSampleAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

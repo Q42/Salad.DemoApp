@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		D5B763E427CF670800C4F81B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D5B763E527CF772600C4F81B /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
 		DD4A280223DB404800A2BF9F /* SaladSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaladSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4A280523DB404800A2BF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4A280823DB404800A2BF9F /* SaladSampleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaladSampleApp.xcdatamodel; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		DD4A27F923DB404800A2BF9F = {
 			isa = PBXGroup;
 			children = (
+				D5B763E527CF772600C4F81B /* UITests.xctestplan */,
 				D5B763E427CF670800C4F81B /* README.md */,
 				DD4A280423DB404800A2BF9F /* SaladSampleApp */,
 				DD4A282023DB404B00A2BF9F /* SaladSampleAppUITests */,
