@@ -12,7 +12,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: UI Tests
-      run: set -o pipefail && xcodebuild test -project SaladSampleApp.xcodeproj -scheme SaladSampleApp -testPlan UITests -destination "platform=iOS Simulator,name=iPhone 13" -resultBundlePath "./ResultBundle.xcresult" | xcpretty
+      run: > 
+        set -o pipefail && 
+        xcodebuild test \
+        -project SaladSampleApp.xcodeproj \
+        -scheme SaladSampleApp \
+        -testPlan UITests \
+        -destination "platform=iOS Simulator,name=iPhone 13" \
+        -resultBundlePath "./ResultBundle.xcresult" | xcpretty
     - uses: actions/upload-artifact@v2
       if: failure()
       with:
