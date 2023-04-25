@@ -16,6 +16,4 @@ struct TodoItem {
     TodoItem(title: "Wash clothes 👕"),
     TodoItem(title: "Take shower")
   ]
-
-  static let emptyItem = TodoItem(title: "")
 }

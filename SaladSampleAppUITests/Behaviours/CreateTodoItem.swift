@@ -9,7 +9,7 @@
 import XCTest
 import Salad
 
-struct CreateTodoItem: Behaviour {
+struct CreateTodoItem: Behavior {
   let title: String
 
   func perform(from view: TodoListView) -> TodoListView {

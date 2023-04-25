@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5B2901A29B7919B00D1AD2A /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/iOSSupport/System/Library/Frameworks/GameplayKit.framework; sourceTree = DEVELOPER_DIR; };
 		D5B763E427CF670800C4F81B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5B763E527CF772600C4F81B /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
 		DD4A280223DB404800A2BF9F /* SaladSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaladSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5B2901929B7919B00D1AD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2901A29B7919B00D1AD2A /* GameplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD4A27F923DB404800A2BF9F = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +99,11 @@
 				DD4A280423DB404800A2BF9F /* SaladSampleApp */,
 				DD4A282023DB404B00A2BF9F /* SaladSampleAppUITests */,
 				DD4A280323DB404800A2BF9F /* Products */,
+				D5B2901929B7919B00D1AD2A /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		DD4A280323DB404800A2BF9F /* Products */ = {
 			isa = PBXGroup;
@@ -214,8 +226,9 @@
 		DD4A27FA23DB404800A2BF9F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = Q42;
 				TargetAttributes = {
 					DD4A280123DB404800A2BF9F = {
@@ -228,7 +241,7 @@
 				};
 			};
 			buildConfigurationList = DD4A27FD23DB404800A2BF9F /* Build configuration list for PBXProject "SaladSampleApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

@@ -9,7 +9,7 @@
 import XCTest
 import Salad
 
-struct OpenTodoItem: Behaviour {
+struct OpenTodoItem: Behavior {
   private let index: Int
 
   init(atIndex index: Int) {

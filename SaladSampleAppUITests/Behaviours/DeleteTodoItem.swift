@@ -9,7 +9,7 @@
 import XCTest
 import Salad
 
-struct DeleteTodoItem: Behaviour {
+struct DeleteTodoItem: Behavior {
   private let index: Int
 
   init(atIndex index: Int) {

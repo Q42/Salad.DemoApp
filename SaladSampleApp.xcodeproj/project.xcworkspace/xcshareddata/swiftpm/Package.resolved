@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Salad",
-        "repositoryURL": "https://github.com/Q42/Salad.git",
-        "state": {
-          "branch": "main",
-          "revision": "0caeeb8cbcea3433274229208b1ab52dd6fe29bd",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "salad",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Q42/Salad.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e7ca03acfb7be14dcbad136eeba85f42a04f44fe"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
