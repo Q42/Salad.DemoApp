@@ -25,3 +25,7 @@ DerivedData/
 ## Gcc Patch
 /*.gcno
 fastlane/report.xml
+
+# Result bundles
+*.xcresult
+test_output
