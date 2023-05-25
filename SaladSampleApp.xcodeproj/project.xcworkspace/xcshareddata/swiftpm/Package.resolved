@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Q42/Salad.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "e7ca03acfb7be14dcbad136eeba85f42a04f44fe"
+        "revision" : "c10580e0632ddaf1542334d386ee3118e1074204",
+        "version" : "1.0.0"
       }
     }
   ],
