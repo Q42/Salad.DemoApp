@@ -17,7 +17,7 @@ Example are provided for GitHub actions and CircleCI, as well as a Fastlane conf
 #### Fastlane
 
 Check out the `fastlane` folder.
-To run the tests through Fastlane: `brew install fastlane && fastlane uitest`.
+To run the tests through Fastlane: `brew install fastlane && fastlane test`.
 
 #### GitHub Actions
 
