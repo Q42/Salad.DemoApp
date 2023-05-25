@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5C353623DB5675003B7B81 /* Tests */,
-				DD4A282D23DB40DD00A2BF9F /* Behaviours */,
+				DD4A282D23DB40DD00A2BF9F /* Behaviors */,
 				DD4A282C23DB40D700A2BF9F /* ViewObjects */,
 				DD4A283E23DB4F9400A2BF9F /* DataObjects */,
 				DD4A282323DB404B00A2BF9F /* Info.plist */,
@@ -153,14 +153,14 @@
 			path = ViewObjects;
 			sourceTree = "<group>";
 		};
-		DD4A282D23DB40DD00A2BF9F /* Behaviours */ = {
+		DD4A282D23DB40DD00A2BF9F /* Behaviors */ = {
 			isa = PBXGroup;
 			children = (
 				DD4A283623DB42D900A2BF9F /* CreateTodoItem.swift */,
 				DD4A283A23DB465B00A2BF9F /* DeleteTodoItem.swift */,
 				DD4A284123DB513400A2BF9F /* OpenTodoItem.swift */,
 			);
-			path = Behaviours;
+			path = Behaviors;
 			sourceTree = "<group>";
 		};
 		DD4A283E23DB4F9400A2BF9F /* DataObjects */ = {
