@@ -1,4 +1,5 @@
 {
+  "originHash" : "929d2090e52375231c5ebc33be1479d4266be85bbf192a8f578aa5ddb5af112c",
   "pins" : [
     {
       "identity" : "salad",
@@ -10,5 +11,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

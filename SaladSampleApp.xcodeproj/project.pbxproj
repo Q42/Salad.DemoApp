@@ -3,277 +3,183 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD4A280623DB404800A2BF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A280523DB404800A2BF9F /* AppDelegate.swift */; };
-		DD4A280923DB404800A2BF9F /* SaladSampleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD4A280723DB404800A2BF9F /* SaladSampleApp.xcdatamodeld */; };
-		DD4A280B23DB404800A2BF9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A280A23DB404800A2BF9F /* SceneDelegate.swift */; };
-		DD4A280D23DB404800A2BF9F /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A280C23DB404800A2BF9F /* TodoListViewController.swift */; };
-		DD4A280F23DB404800A2BF9F /* TodoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A280E23DB404800A2BF9F /* TodoItemViewController.swift */; };
-		DD4A281223DB404800A2BF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4A281023DB404800A2BF9F /* Main.storyboard */; };
-		DD4A281423DB404B00A2BF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4A281323DB404B00A2BF9F /* Assets.xcassets */; };
-		DD4A281723DB404B00A2BF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4A281523DB404B00A2BF9F /* LaunchScreen.storyboard */; };
-		DD4A282F23DB41E500A2BF9F /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A282E23DB41E500A2BF9F /* TodoListView.swift */; };
-		DD4A283123DB41EA00A2BF9F /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283023DB41EA00A2BF9F /* TodoItemView.swift */; };
-		DD4A283523DB429E00A2BF9F /* Salad in Frameworks */ = {isa = PBXBuildFile; productRef = DD4A283423DB429E00A2BF9F /* Salad */; };
-		DD4A283723DB42D900A2BF9F /* CreateTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283623DB42D900A2BF9F /* CreateTodoItem.swift */; };
-		DD4A283923DB439800A2BF9F /* TodoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283823DB439800A2BF9F /* TodoItemCell.swift */; };
-		DD4A283B23DB465B00A2BF9F /* DeleteTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283A23DB465B00A2BF9F /* DeleteTodoItem.swift */; };
-		DD4A283D23DB4D2700A2BF9F /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283C23DB4D2700A2BF9F /* AddItemView.swift */; };
-		DD4A284023DB4F9A00A2BF9F /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A283F23DB4F9A00A2BF9F /* TodoItem.swift */; };
-		DD4A284223DB513400A2BF9F /* OpenTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4A284123DB513400A2BF9F /* OpenTodoItem.swift */; };
-		DD5C353823DB56B8003B7B81 /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C353723DB56B8003B7B81 /* TodoAppTests.swift */; };
+		D5A5292F2D43C61900D4F24E /* Salad in Frameworks */ = {isa = PBXBuildFile; productRef = D5A5292E2D43C61900D4F24E /* Salad */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD4A281E23DB404B00A2BF9F /* PBXContainerItemProxy */ = {
+		D5A529042D43C2FF00D4F24E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DD4A27FA23DB404800A2BF9F /* Project object */;
+			containerPortal = D5A528DF2D43C2FE00D4F24E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DD4A280123DB404800A2BF9F;
+			remoteGlobalIDString = D5A528E62D43C2FE00D4F24E;
 			remoteInfo = SaladSampleApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D5B2901A29B7919B00D1AD2A /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/iOSSupport/System/Library/Frameworks/GameplayKit.framework; sourceTree = DEVELOPER_DIR; };
-		D5B763E427CF670800C4F81B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D5B763E527CF772600C4F81B /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
-		DD4A280223DB404800A2BF9F /* SaladSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaladSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD4A280523DB404800A2BF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD4A280823DB404800A2BF9F /* SaladSampleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaladSampleApp.xcdatamodel; sourceTree = "<group>"; };
-		DD4A280A23DB404800A2BF9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD4A280C23DB404800A2BF9F /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
-		DD4A280E23DB404800A2BF9F /* TodoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemViewController.swift; sourceTree = "<group>"; };
-		DD4A281123DB404800A2BF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD4A281323DB404B00A2BF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD4A281623DB404B00A2BF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DD4A281823DB404B00A2BF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD4A281D23DB404B00A2BF9F /* SaladSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaladSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD4A282323DB404B00A2BF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD4A282E23DB41E500A2BF9F /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
-		DD4A283023DB41EA00A2BF9F /* TodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemView.swift; sourceTree = "<group>"; };
-		DD4A283623DB42D900A2BF9F /* CreateTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoItem.swift; sourceTree = "<group>"; };
-		DD4A283823DB439800A2BF9F /* TodoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemCell.swift; sourceTree = "<group>"; };
-		DD4A283A23DB465B00A2BF9F /* DeleteTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTodoItem.swift; sourceTree = "<group>"; };
-		DD4A283C23DB4D2700A2BF9F /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
-		DD4A283F23DB4F9A00A2BF9F /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
-		DD4A284123DB513400A2BF9F /* OpenTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTodoItem.swift; sourceTree = "<group>"; };
-		DD5C353723DB56B8003B7B81 /* TodoAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoAppTests.swift; sourceTree = "<group>"; };
+		D5A528E72D43C2FE00D4F24E /* SaladSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaladSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A529032D43C2FF00D4F24E /* SaladSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaladSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A5292C2D43C5B100D4F24E /* UITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D5A528E92D43C2FE00D4F24E /* SaladSampleApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SaladSampleApp;
+			sourceTree = "<group>";
+		};
+		D5A529062D43C2FF00D4F24E /* SaladSampleAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SaladSampleAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		DD4A27FF23DB404800A2BF9F /* Frameworks */ = {
+		D5A528E42D43C2FE00D4F24E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD4A281A23DB404B00A2BF9F /* Frameworks */ = {
+		D5A529002D43C2FF00D4F24E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4A283523DB429E00A2BF9F /* Salad in Frameworks */,
+				D5A5292F2D43C61900D4F24E /* Salad in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D5B2901929B7919B00D1AD2A /* Frameworks */ = {
+		D5A528DE2D43C2FE00D4F24E = {
 			isa = PBXGroup;
 			children = (
-				D5B2901A29B7919B00D1AD2A /* GameplayKit.framework */,
+				D5A5292C2D43C5B100D4F24E /* UITests.xctestplan */,
+				D5A528E92D43C2FE00D4F24E /* SaladSampleApp */,
+				D5A529062D43C2FF00D4F24E /* SaladSampleAppUITests */,
+				D5A528E82D43C2FE00D4F24E /* Products */,
 			);
-			name = Frameworks;
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
-		DD4A27F923DB404800A2BF9F = {
+		D5A528E82D43C2FE00D4F24E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5B763E527CF772600C4F81B /* UITests.xctestplan */,
-				D5B763E427CF670800C4F81B /* README.md */,
-				DD4A280423DB404800A2BF9F /* SaladSampleApp */,
-				DD4A282023DB404B00A2BF9F /* SaladSampleAppUITests */,
-				DD4A280323DB404800A2BF9F /* Products */,
-				D5B2901929B7919B00D1AD2A /* Frameworks */,
-			);
-			indentWidth = 2;
-			sourceTree = "<group>";
-			tabWidth = 2;
-		};
-		DD4A280323DB404800A2BF9F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DD4A280223DB404800A2BF9F /* SaladSampleApp.app */,
-				DD4A281D23DB404B00A2BF9F /* SaladSampleAppUITests.xctest */,
+				D5A528E72D43C2FE00D4F24E /* SaladSampleApp.app */,
+				D5A529032D43C2FF00D4F24E /* SaladSampleAppUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DD4A280423DB404800A2BF9F /* SaladSampleApp */ = {
-			isa = PBXGroup;
-			children = (
-				DD4A280523DB404800A2BF9F /* AppDelegate.swift */,
-				DD4A280A23DB404800A2BF9F /* SceneDelegate.swift */,
-				DD4A280C23DB404800A2BF9F /* TodoListViewController.swift */,
-				DD4A280E23DB404800A2BF9F /* TodoItemViewController.swift */,
-				DD4A281023DB404800A2BF9F /* Main.storyboard */,
-				DD4A281323DB404B00A2BF9F /* Assets.xcassets */,
-				DD4A281523DB404B00A2BF9F /* LaunchScreen.storyboard */,
-				DD4A281823DB404B00A2BF9F /* Info.plist */,
-				DD4A280723DB404800A2BF9F /* SaladSampleApp.xcdatamodeld */,
-			);
-			path = SaladSampleApp;
-			sourceTree = "<group>";
-		};
-		DD4A282023DB404B00A2BF9F /* SaladSampleAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DD5C353623DB5675003B7B81 /* Tests */,
-				DD4A282D23DB40DD00A2BF9F /* Behaviors */,
-				DD4A282C23DB40D700A2BF9F /* ViewObjects */,
-				DD4A283E23DB4F9400A2BF9F /* DataObjects */,
-				DD4A282323DB404B00A2BF9F /* Info.plist */,
-			);
-			path = SaladSampleAppUITests;
-			sourceTree = "<group>";
-		};
-		DD4A282C23DB40D700A2BF9F /* ViewObjects */ = {
-			isa = PBXGroup;
-			children = (
-				DD4A282E23DB41E500A2BF9F /* TodoListView.swift */,
-				DD4A283023DB41EA00A2BF9F /* TodoItemView.swift */,
-				DD4A283823DB439800A2BF9F /* TodoItemCell.swift */,
-				DD4A283C23DB4D2700A2BF9F /* AddItemView.swift */,
-			);
-			path = ViewObjects;
-			sourceTree = "<group>";
-		};
-		DD4A282D23DB40DD00A2BF9F /* Behaviors */ = {
-			isa = PBXGroup;
-			children = (
-				DD4A283623DB42D900A2BF9F /* CreateTodoItem.swift */,
-				DD4A283A23DB465B00A2BF9F /* DeleteTodoItem.swift */,
-				DD4A284123DB513400A2BF9F /* OpenTodoItem.swift */,
-			);
-			path = Behaviors;
-			sourceTree = "<group>";
-		};
-		DD4A283E23DB4F9400A2BF9F /* DataObjects */ = {
-			isa = PBXGroup;
-			children = (
-				DD4A283F23DB4F9A00A2BF9F /* TodoItem.swift */,
-			);
-			path = DataObjects;
-			sourceTree = "<group>";
-		};
-		DD5C353623DB5675003B7B81 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DD5C353723DB56B8003B7B81 /* TodoAppTests.swift */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD4A280123DB404800A2BF9F /* SaladSampleApp */ = {
+		D5A528E62D43C2FE00D4F24E /* SaladSampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD4A282623DB404B00A2BF9F /* Build configuration list for PBXNativeTarget "SaladSampleApp" */;
+			buildConfigurationList = D5A5290D2D43C2FF00D4F24E /* Build configuration list for PBXNativeTarget "SaladSampleApp" */;
 			buildPhases = (
-				DD4A27FE23DB404800A2BF9F /* Sources */,
-				DD4A27FF23DB404800A2BF9F /* Frameworks */,
-				DD4A280023DB404800A2BF9F /* Resources */,
+				D5A528E32D43C2FE00D4F24E /* Sources */,
+				D5A528E42D43C2FE00D4F24E /* Frameworks */,
+				D5A528E52D43C2FE00D4F24E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D5A528E92D43C2FE00D4F24E /* SaladSampleApp */,
 			);
 			name = SaladSampleApp;
+			packageProductDependencies = (
+			);
 			productName = SaladSampleApp;
-			productReference = DD4A280223DB404800A2BF9F /* SaladSampleApp.app */;
+			productReference = D5A528E72D43C2FE00D4F24E /* SaladSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD4A281C23DB404B00A2BF9F /* SaladSampleAppUITests */ = {
+		D5A529022D43C2FF00D4F24E /* SaladSampleAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD4A282923DB404B00A2BF9F /* Build configuration list for PBXNativeTarget "SaladSampleAppUITests" */;
+			buildConfigurationList = D5A529132D43C2FF00D4F24E /* Build configuration list for PBXNativeTarget "SaladSampleAppUITests" */;
 			buildPhases = (
-				DD4A281923DB404B00A2BF9F /* Sources */,
-				DD4A281A23DB404B00A2BF9F /* Frameworks */,
-				DD4A281B23DB404B00A2BF9F /* Resources */,
+				D5A528FF2D43C2FF00D4F24E /* Sources */,
+				D5A529002D43C2FF00D4F24E /* Frameworks */,
+				D5A529012D43C2FF00D4F24E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DD4A281F23DB404B00A2BF9F /* PBXTargetDependency */,
+				D5A529052D43C2FF00D4F24E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D5A529062D43C2FF00D4F24E /* SaladSampleAppUITests */,
 			);
 			name = SaladSampleAppUITests;
 			packageProductDependencies = (
-				DD4A283423DB429E00A2BF9F /* Salad */,
+				D5A5292E2D43C61900D4F24E /* Salad */,
 			);
 			productName = SaladSampleAppUITests;
-			productReference = DD4A281D23DB404B00A2BF9F /* SaladSampleAppUITests.xctest */;
+			productReference = D5A529032D43C2FF00D4F24E /* SaladSampleAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DD4A27FA23DB404800A2BF9F /* Project object */ = {
+		D5A528DF2D43C2FE00D4F24E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1430;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = Q42;
 				TargetAttributes = {
-					DD4A280123DB404800A2BF9F = {
-						CreatedOnToolsVersion = 11.3;
+					D5A528E62D43C2FE00D4F24E = {
+						CreatedOnToolsVersion = 16.2;
 					};
-					DD4A281C23DB404B00A2BF9F = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = DD4A280123DB404800A2BF9F;
+					D5A529022D43C2FF00D4F24E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D5A528E62D43C2FE00D4F24E;
 					};
 				};
 			};
-			buildConfigurationList = DD4A27FD23DB404800A2BF9F /* Build configuration list for PBXProject "SaladSampleApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = D5A528E22D43C2FE00D4F24E /* Build configuration list for PBXProject "SaladSampleApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = DD4A27F923DB404800A2BF9F;
+			mainGroup = D5A528DE2D43C2FE00D4F24E;
+			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DD4A283323DB429E00A2BF9F /* XCRemoteSwiftPackageReference "Salad" */,
+				D5A5292D2D43C61900D4F24E /* XCRemoteSwiftPackageReference "Salad" */,
 			);
-			productRefGroup = DD4A280323DB404800A2BF9F /* Products */;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D5A528E82D43C2FE00D4F24E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD4A280123DB404800A2BF9F /* SaladSampleApp */,
-				DD4A281C23DB404B00A2BF9F /* SaladSampleAppUITests */,
+				D5A528E62D43C2FE00D4F24E /* SaladSampleApp */,
+				D5A529022D43C2FF00D4F24E /* SaladSampleAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DD4A280023DB404800A2BF9F /* Resources */ = {
+		D5A528E52D43C2FE00D4F24E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4A281723DB404B00A2BF9F /* LaunchScreen.storyboard in Resources */,
-				DD4A281423DB404B00A2BF9F /* Assets.xcassets in Resources */,
-				DD4A281223DB404800A2BF9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD4A281B23DB404B00A2BF9F /* Resources */ = {
+		D5A529012D43C2FF00D4F24E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,72 +189,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DD4A27FE23DB404800A2BF9F /* Sources */ = {
+		D5A528E32D43C2FE00D4F24E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4A280D23DB404800A2BF9F /* TodoListViewController.swift in Sources */,
-				DD4A280623DB404800A2BF9F /* AppDelegate.swift in Sources */,
-				DD4A280F23DB404800A2BF9F /* TodoItemViewController.swift in Sources */,
-				DD4A280923DB404800A2BF9F /* SaladSampleApp.xcdatamodeld in Sources */,
-				DD4A280B23DB404800A2BF9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD4A281923DB404B00A2BF9F /* Sources */ = {
+		D5A528FF2D43C2FF00D4F24E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD4A282F23DB41E500A2BF9F /* TodoListView.swift in Sources */,
-				DD4A283123DB41EA00A2BF9F /* TodoItemView.swift in Sources */,
-				DD4A283D23DB4D2700A2BF9F /* AddItemView.swift in Sources */,
-				DD4A283723DB42D900A2BF9F /* CreateTodoItem.swift in Sources */,
-				DD4A284223DB513400A2BF9F /* OpenTodoItem.swift in Sources */,
-				DD4A283923DB439800A2BF9F /* TodoItemCell.swift in Sources */,
-				DD4A284023DB4F9A00A2BF9F /* TodoItem.swift in Sources */,
-				DD4A283B23DB465B00A2BF9F /* DeleteTodoItem.swift in Sources */,
-				DD5C353823DB56B8003B7B81 /* TodoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DD4A281F23DB404B00A2BF9F /* PBXTargetDependency */ = {
+		D5A529052D43C2FF00D4F24E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD4A280123DB404800A2BF9F /* SaladSampleApp */;
-			targetProxy = DD4A281E23DB404B00A2BF9F /* PBXContainerItemProxy */;
+			target = D5A528E62D43C2FE00D4F24E /* SaladSampleApp */;
+			targetProxy = D5A529042D43C2FF00D4F24E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		DD4A281023DB404800A2BF9F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD4A281123DB404800A2BF9F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DD4A281523DB404B00A2BF9F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD4A281623DB404B00A2BF9F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		DD4A282423DB404B00A2BF9F /* Debug */ = {
+		D5A5290B2D43C2FF00D4F24E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -378,7 +251,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -392,24 +266,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		DD4A282523DB404B00A2BF9F /* Release */ = {
+		D5A5290C2D43C2FF00D4F24E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -439,7 +314,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -447,86 +323,106 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		DD4A282723DB404B00A2BF9F /* Debug */ = {
+		D5A5290E2D43C2FF00D4F24E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LC3Y92HQQ3;
-				INFOPLIST_FILE = SaladSampleApp/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SaladSampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J6VSUTQNX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.q42.SaladSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DD4A282823DB404B00A2BF9F /* Release */ = {
+		D5A5290F2D43C2FF00D4F24E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LC3Y92HQQ3;
-				INFOPLIST_FILE = SaladSampleApp/Info.plist;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SaladSampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J6VSUTQNX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.q42.SaladSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		DD4A282A23DB404B00A2BF9F /* Debug */ = {
+		D5A529142D43C2FF00D4F24E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LC3Y92HQQ3;
-				INFOPLIST_FILE = SaladSampleAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8J6VSUTQNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.q42.SaladSampleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SaladSampleApp;
 			};
 			name = Debug;
 		};
-		DD4A282B23DB404B00A2BF9F /* Release */ = {
+		D5A529152D43C2FF00D4F24E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LC3Y92HQQ3;
-				INFOPLIST_FILE = SaladSampleAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8J6VSUTQNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.q42.SaladSampleAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SaladSampleApp;
@@ -536,29 +432,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD4A27FD23DB404800A2BF9F /* Build configuration list for PBXProject "SaladSampleApp" */ = {
+		D5A528E22D43C2FE00D4F24E /* Build configuration list for PBXProject "SaladSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD4A282423DB404B00A2BF9F /* Debug */,
-				DD4A282523DB404B00A2BF9F /* Release */,
+				D5A5290B2D43C2FF00D4F24E /* Debug */,
+				D5A5290C2D43C2FF00D4F24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD4A282623DB404B00A2BF9F /* Build configuration list for PBXNativeTarget "SaladSampleApp" */ = {
+		D5A5290D2D43C2FF00D4F24E /* Build configuration list for PBXNativeTarget "SaladSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD4A282723DB404B00A2BF9F /* Debug */,
-				DD4A282823DB404B00A2BF9F /* Release */,
+				D5A5290E2D43C2FF00D4F24E /* Debug */,
+				D5A5290F2D43C2FF00D4F24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD4A282923DB404B00A2BF9F /* Build configuration list for PBXNativeTarget "SaladSampleAppUITests" */ = {
+		D5A529132D43C2FF00D4F24E /* Build configuration list for PBXNativeTarget "SaladSampleAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD4A282A23DB404B00A2BF9F /* Debug */,
-				DD4A282B23DB404B00A2BF9F /* Release */,
+				D5A529142D43C2FF00D4F24E /* Debug */,
+				D5A529152D43C2FF00D4F24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -566,7 +462,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DD4A283323DB429E00A2BF9F /* XCRemoteSwiftPackageReference "Salad" */ = {
+		D5A5292D2D43C61900D4F24E /* XCRemoteSwiftPackageReference "Salad" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Q42/Salad.git";
 			requirement = {
@@ -577,25 +473,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DD4A283423DB429E00A2BF9F /* Salad */ = {
+		D5A5292E2D43C61900D4F24E /* Salad */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DD4A283323DB429E00A2BF9F /* XCRemoteSwiftPackageReference "Salad" */;
+			package = D5A5292D2D43C61900D4F24E /* XCRemoteSwiftPackageReference "Salad" */;
 			productName = Salad;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		DD4A280723DB404800A2BF9F /* SaladSampleApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DD4A280823DB404800A2BF9F /* SaladSampleApp.xcdatamodel */,
-			);
-			currentVersion = DD4A280823DB404800A2BF9F /* SaladSampleApp.xcdatamodel */;
-			path = SaladSampleApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = DD4A27FA23DB404800A2BF9F /* Project object */;
+	rootObject = D5A528DF2D43C2FE00D4F24E /* Project object */;
 }
