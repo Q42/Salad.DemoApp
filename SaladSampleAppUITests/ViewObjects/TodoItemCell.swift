@@ -6,26 +6,26 @@
 //  Copyright © 2020 Q42. All rights reserved.
 //
 
-import XCTest
 import Salad
+import XCTest
 
 struct TodoItemCell: ViewObject {
-  let root: XCUIElement
-  let identifyingElementId = "todoItemCell"
+    /// The root of this cell
+    let root: XCUIElement
+    let identifyingElementId = "TodoItemCell"
 
-  var titleLabel: XCUIElement { root.staticTexts.firstMatch }
+    var titleLabel: XCUIElement { root.staticTexts.firstMatch }
 
-  var dateLabel: XCUIElement { root.staticTexts.allElementsBoundByIndex[1] }
+    var dateLabel: XCUIElement { root.staticTexts.allElementsBoundByIndex[1] }
 
-  func swipeToDelete() {
-    root.swipeLeft()
-    root.buttons["Delete"].tap()
-  }
+    func swipeToShowDeleteButton() {
+        root.swipeLeft(velocity: .slow)
+    }
 
-  func open() -> TodoItemView {
-    root.tap()
-    // Our `root` is scoped to the TableViewCell of this item.
-    // Hence we need to take a DetailView from the application root.
-    return XCUIApplication().createVerifiedViewObject()
-  }
+    func open() -> TodoItemDetailView {
+        root.tap()
+        // Our `root` is scoped to the TableViewCell of this item.
+        // Hence we need to take a DetailView from the application root.
+        return XCUIApplication().createVerifiedViewObject()
+    }
 }

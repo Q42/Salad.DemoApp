@@ -6,21 +6,23 @@
 //  Copyright © 2020 Q42. All rights reserved.
 //
 
-import XCTest
 import Salad
+import XCTest
 
 struct TodoListView: ViewObject {
-  let root: XCUIElement
-  let identifyingElementId = "masterView"
+    let root: XCUIElement
+    let identifyingElementId = "TodoListView"
 
-  private var addButton: XCUIElement { root.buttons["addButton"] }
+    private var addButton: XCUIElement { root.buttons["addButton"] }
 
-  var todoItems: [TodoItemCell] {
-    return root.cells.allElementsBoundByIndex.map(TodoItemCell.init)
-  }
+    var todoItems: [TodoItemCell] {
+        return root.cells.allElementsBoundByIndex.map {
+            TodoItemCell(root: $0)
+        }
+    }
 
-  func tapAddButton() -> AddItemView {
-    addButton.tap()
-    return root.createVerifiedViewObject()
-  }
+    func tapAddButton() -> AddItemView {
+        addButton.tap()
+        return root.createVerifiedViewObject()
+    }
 }

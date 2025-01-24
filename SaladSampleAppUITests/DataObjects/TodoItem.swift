@@ -9,11 +9,11 @@
 import Foundation
 
 struct TodoItem {
-  let title: String
+    let title: String
 
-  static let validItems: [TodoItem] = [
-    TodoItem(title: "Get milk 🥛"),
-    TodoItem(title: "Wash clothes 👕"),
-    TodoItem(title: "Take shower")
-  ]
+    static let validItems: [TodoItem] = [
+        TodoItem(title: "Buy milk 🥛"),
+        TodoItem(title: "Wash clothes 👕"),
+        TodoItem(title: "Take shower"),
+    ]
 }

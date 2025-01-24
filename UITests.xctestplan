@@ -34,7 +34,7 @@
     {
       "target" : {
         "containerPath" : "container:SaladSampleApp.xcodeproj",
-        "identifier" : "DD4A281C23DB404B00A2BF9F",
+        "identifier" : "D5A529022D43C2FF00D4F24E",
         "name" : "SaladSampleAppUITests"
       }
     }

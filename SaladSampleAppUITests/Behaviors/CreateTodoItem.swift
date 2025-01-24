@@ -6,17 +6,17 @@
 //  Copyright © 2020 Q42. All rights reserved.
 //
 
-import XCTest
 import Salad
+import XCTest
 
 struct CreateTodoItem: Behavior {
-  let title: String
+    let title: String
 
-  func perform(from view: TodoListView) -> TodoListView {
-    let addItemView = view.tapAddButton()
-    addItemView.enterTitle(title: title)
-    addItemView.tapSaveButton()
+    func perform(from view: TodoListView) -> TodoListView {
+        let addItemView = view.tapAddButton()
+        addItemView.enterTitle(title: title)
+        addItemView.tapSaveButton()
 
-    return view
-  }
+        return view
+    }
 }
