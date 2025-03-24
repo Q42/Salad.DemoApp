@@ -22,7 +22,7 @@ platform :ios do
       project: "SaladSampleApp.xcodeproj",
       testplan: "UITests",
       scheme: "SaladSampleApp",
-      result_bundle: true
+      result_bundle_path: "TestResults.xcresult"
     )
   end
 end
